@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaryn assignment</title>
+    <style>
+         .con 
+         {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+         }
+        .div1
+        {
+            text-align: center;
+            margin: auto;
+        }
+        .div2
+        {
+            display: flex;
+            gap: 5px;
+        }
+        .div2 button{
+            margin: auto;
+            padding: 10px;
+            background-color:gray;
+            border: none;
+        }
+          
+        @media screen and (max-width: 768px){
+            .con 
+         {
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+         }
+          .bt1
+          {
+            display:none;
+          }
+        }
+        @media screen and (max-width: 480px){
+            .con 
+         {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+         }
+         .div2
+         {
+            flex-direction: column;
+         }
+         .bt1{
+            display: inline;
+         }
+         
+        .div2 button
+        {
+            padding: 0px;
+            
+        }
+        
+        }
+    </style>
+</head>
+<body>
+     <div class="con">
+        <div class="div1">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s">
+         <h1>Price</h1>
+         <p>200 rs.</p>   
+          <div class="div2">
+            <button>Buy now</button> 
+            <button class="bt1">View detail</button>
+          </div>
+     </div>
+        <div class="div1">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s">
+         <h1>Price</h1>
+         <p>200 rs.</p>   
+          <div class="div2">
+            <button>Buy now</button> 
+            <button class="bt1">View detail</button>
+          </div>
+
+    
+     </div>
+        <div class="div1">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s">
+         <h1>Price</h1>
+         <p>200 rs.</p>   
+          <div class="div2">
+            <button>Buy now</button> 
+            <button class="bt1">View detail</button>
+          </div>
+
+    
+     </div>
+        <div class="div1">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s">
+         <h1>Price</h1>
+         <p>200 rs.</p>   
+          <div class="div2">
+            <button>Buy now</button> 
+            <button class="bt1">View detail</button>
+          </div>
+
+        </div>
+    </div>
+</body>
+</html>

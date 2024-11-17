@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  for large screen
+         bg color is yellow */
+         /*for small screeen
+          bg color is red and text in left */
+          /* for medium screen
+           bg color blue*/
+           .con{
+            background-color:yellow;
+            text-align: center;
+        }
+        .con2{
+        background-image: url("bappa.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+       }
+       .con2 img
+       {
+        width: 200px;
+        height: 200px;
+        display: grid;
+       } 
+       .bt1
+       {
+        background-color: pink;
+        padding: 10px;
+       }
+          @media screen and (max-width: 768px) {
+                .con
+                {
+                background-color: red;
+                }
+                .con2{
+                    grid-template-columns: repeat(2,1fr);
+        
+                     }    
+            }
+
+
+            @media screen and (max-width:480px) {
+            .con 
+            {
+                background-color: blue;
+                text-align: left;
+            }
+            .con2{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+       
+       
+      
+
+        
+    </style>
+</head>
+<body>
+    <div class="con">
+        Media Quary
+    </div>
+    <div class="con2">
+        <img src="bappa copy.png">
+        <img src="bappa.jpg">
+        <img src="bappa copy.png">
+        <img src="bappa copy.png">
+
+      </div>
+      <button class="bt1">Click me</button>
+
+    </body>
+</html>

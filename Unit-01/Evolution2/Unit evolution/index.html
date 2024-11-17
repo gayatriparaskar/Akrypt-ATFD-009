@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .nav{
+            background-color: blue;
+            display: flex;
+        }
+        .nav1
+        {
+            color: white;
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            margin-left: 500px;
+        }
+          .nav2
+          {
+            color: white;
+            margin: 0px;
+            background-color: blue;
+          }
+          .con1
+          {
+            display: flex;
+             gap: 200px;
+            padding: 20px;
+          }
+          .about
+          {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 10px;
+            background-color: aliceblue;
+          }
+          .about1
+          {
+            margin: 100px;
+            width: 200px;
+            padding: 10px;
+          }
+          #bt1
+          {
+            background-color: #20e2a2;
+            color: white; 
+            padding: 10px;
+            border: none;
+          }
+          #bt1:hover
+          {
+            background-color: aqua;
+          }
+         
+          
+          .about12
+          { 
+            display: flex;
+            margin: 80px;
+            padding: 20px;
+
+          }
+          .ab
+          {
+            margin-left: 20px;
+            padding: 20px;
+            width: 200px;
+            height: 250px;
+          }
+          #build
+          {
+            background-color: rgb(247, 250, 250);
+             width: 50px;
+             padding: 20px;
+            border-radius: 50%;
+            border: none;
+          }
+          #build:hover{
+            background-color: azure;
+
+          }
+          .lorem
+          {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            margin: 50px;
+          }
+          .lorem div
+          {
+            border: 1px solid gray;
+            padding: 20px;
+            color: blue;
+            font-weight: bolder;
+            font-size: 20px;
+          }
+          .lorem i
+          {
+            font-size: 30px;
+            padding: 20px;
+          }
+          .lorem div:hover{
+            color: green;
+            border: 1px solid green;
+          }
+          .happy
+          {
+            background-color:whitesmoke;
+            display: flex;
+            gap:10px;
+          }
+          .happy div{
+            width: 200px;
+            margin:50px;
+            text-align: center;
+            background-color:white;
+            box-shadow: 1px 1px gray;
+          }
+          
+          @media screen and (max-width: 480px)
+          {
+            .lorem{
+                display: block;
+    
+            }
+            
+          }
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <div><h1 style="color: white;">Bootslander</h1></div>
+    <div class="nav1">
+        <div>Home</div>
+        <div>About</div>
+        <div>Features</div>
+        <div>Gallery</div>
+        <div>Team</div>     
+       <div> pricing</div>
+        <div>Dropdown</div>
+        <div>contact</div>
+    </div>
+    </div>
+   <div class="nav2">
+    <div class="con1">
+      <div style="width: 500px;padding: 20px;">
+            <h1>Build Your Landing Page With <u>Bootslander</u></h1>
+            <p>We are team of talented designers making websites with Bootstrap</p>
+            <div style="display: flex; gap: 10px;">
+            <button style=" background-color: #20e2a2; border: none; border-radius: 50px;color: white; padding: 10px;">Get Started</button>
+            <button style=" background-color: blue;color: white; padding: 10px;border-radius: 50px;border: none;"><i class="fa-solid fa-video"></i> Watch Video</button>
+         </div>
+         </div>
+        <div style="width: 50%;">
+            <img src="https://themewagon.github.io/Bootslander/assets/img/hero-img.png">
+         </div>
+    
+        </div>
+    </div>
+    </div>
+    <div class="about">
+        <div class="about1">
+            <button style="color: green; padding: 10px;border: none; background-color: azure;border-radius: 10px;">About Us</button>
+            <h1 style="color: blue;">Ducimus rerum libero reprehenderit cumque</h1>
+            <p>
+                Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.
+            </p>
+            <button id="bt1">Read More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="about12">
+        <div class="ab">
+            <div id="build"><i class="fa-solid fa-building" style="font-size: 40px;color: green;"></i></div>
+            <h1 style="color: blue">Eius provident</h1>
+            <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+        </div>
+        <div class="ab">
+            <div id="build"><i class="fa-solid fa-building" style="font-size: 40px;color: green;padding: 0px; "></i></div>
+            <h1 style="color: blue">Eius provident</h1>
+            <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+        </div>
+    </div>
+    </div>
+        <div class="lorem">
+           <div><i class="fa-solid fa-eye" style="color: orange;" ></i>Lorem Ipsum</div>
+           <div><i class="fa-solid fa-graduation-cap"></i>Dolor sitema</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>sed perspiciatis</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Magni Dolores</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Nemo Enim</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Eiusmod Tempor</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Medela Teren</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Pita Neve</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Dirada Pack</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Motono Ideal</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Verdo Park</div>
+           <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Flavor Nivelanda</div>
+        </div>
+        <div class="happy">
+            <div><h1>232</h1><p>Happy Client</p></div>
+            <div><h1>232</h1><p>Happy Client</p></div>
+            <div><h1>232</h1><p>Happy Client</p></div>
+            <div><h1>232</h1><p>Happy Client</p></div>
+
+        </div>
+        
+    
+    
+</body>
+
+</html>
