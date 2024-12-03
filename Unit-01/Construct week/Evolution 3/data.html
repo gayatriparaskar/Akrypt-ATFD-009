@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #box1{
+            width: 100%;
+            height: 50px;
+            border: solid; */
+            display: flex;
+            
+        }
+        #box1:hover{
+        cursor: pointer;
+        color: blue;
+        }
+        #box2{
+            width: 400px;
+            height: 50px;
+             border: solid; 
+            margin-left: 100px;
+        }
+       
+
+       #box3{
+        width: 400px;
+            height: 50px;
+            border: solid; 
+            position: relative;
+            right: 160px;
+           
+       }
+            
+       #box4{
+        width: 300px;
+            height: 50px;
+            /* border: solid; */
+            display: flex;
+            gap: 20px;
+            margin-left: 300px;
+            margin-top: 19px;
+       }
+       #box5{
+        width: 100%;
+        height:150px ;
+        /* border: solid; */
+        background-color: rgb(51, 51, 242);
+        display: flex;
+        position: relative;
+       }
+       #box6{
+        width: 250px;
+        height: 80px;
+        /* border: solid; */
+        margin-left: 100px;
+       }
+       
+       #box7{
+        width: 250px;
+        height: 80px;
+        /* border: solid; */
+        text-align: center;
+        position: relative;
+        left: 300px;
+        margin-top: 50px;
+
+       }
+       #box8{
+        width: 250px;
+        height: 80px;
+        /* border: solid; */
+        position: relative;
+        left: 600px;
+
+       }
+       #box9{
+        
+        width: 80%;
+        height: 85px;
+        /* border: solid rgb(242, 239, 239); */
+        margin-left: 180px;
+        position: absolute;
+        position: relative;
+        bottom: 80px;
+        background-color: white;
+        /* position: fixed; */
+        
+        
+       }
+       #box10{
+        width: 600px;
+        height: 50px;
+        /* border: solid; */
+        margin-top: 30px;
+        display: flex;
+        gap: 50PX;
+       margin-left: 10px;
+       position: relative;
+       top: 40px;
+       
+       }
+       #box10:hover{
+        color: brown;
+            cursor: pointer;
+       }
+       #box11{
+        width: 300px;
+        height: 50px;
+        /* border: solid; */
+        position: relative;
+        bottom: 15px;
+        left: 900px;
+        display: flex;
+      
+        gap: 30px;
+        text-align: center;
+       }
+       #box11:hover{
+        color: rgb(243, 107, 22);
+        width: 20px;
+       }
+       #box12{
+        display: flex;
+        margin-left: 100px;
+        gap: 50px;
+        position: absolute;
+        
+        
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+       }
+
+       *{
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%; /* width dikali slide */
+    animation: 10s slide infinite;
+}
+
+.slide{
+    position: relative;
+    width: 25%; /* width dibagi slide */
+    float: left;
+}
+
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+    margin-left: -400px;
+    color: black;
+   
+
+}
+.slide h1:hover{
+    color: rgb(255, 50, 9);
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    /* 40%{
+        left:-200%;
+    } */
+    /* 50%{
+        left:-200%;
+    } */
+    /* 55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    } */
+    /* 74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:0;
+    }
+    1000%{
+        left:0;
+    } */
+}
+
+   #JK{
+   margin-left: 500px;
+   position: relative;
+   left: 200px;
+   } 
+   #cr{
+    width: 99%;
+    height: 700px;
+    /* border: solid; */
+    display: flex;
+   }
+   #men{
+    width: 700px;
+    height: 600px;
+    /* border: solid; */
+    margin-left: 90px;
+    position: relative;
+   }  
+   #ll{
+    width: 300px;
+    height: 300px;
+    /* border: solid; */
+   } 
+       #lp{
+        width: 300px;
+    height: 300px;
+    /* border: solid; */
+    margin-left: 300px;
+    position: relative;
+    bottom: 300px;
+       }
+       #lu{
+        width: 300px;
+    height: 300px;
+    /* border: solid; */
+    position: relative;
+    bottom: 305px;
+       }
+       #lg{
+        width: 300px;
+        height: 300px;
+        /* border: solid; */
+        position: absolute;
+        bottom: 40px;
+        background-color: rgb(73, 73, 252);
+        left: 250px;
+        
+        
+       }
+       #qw{
+        width: 200px;
+        height: 200px;
+        border: solid black;
+        border-radius: 1000px;
+        position: relative;
+        top: 50px;
+        left: 100px;
+        background-color: rgb(78, 78, 253);
+       }
+       #zz{
+        width: 200px;
+        height: 200px;
+        border: solid black;
+        border-radius: 1000px;
+        position: relative;
+        bottom: 158px;
+        left: 355px;
+        background-color: cadetblue;
+        
+       }
+       #aa{
+        width: 200px;
+        height: 200px;
+        border: solid black;
+        border-radius: 1000px;
+        position: relative;
+        bottom: 230px;
+        left: 230px;
+        background-color: blueviolet;
+       }
+       .award{
+        margin-top: 20px;
+        width: 90%;
+        height: 300px;
+        /* border: solid; */
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        
+       }
+       .award1{
+        width: 300px;
+        margin-left: 130px;
+        text-align: center;
+        margin-top: 50px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+       }
+       .award2{
+        width: 150px;
+       margin-right: 10px;
+       margin: auto;
+       }
+       .award3{
+
+        width: 90px;
+        text-align: center;
+        margin: auto;
+        border-radius: 1000px;
+        margin-left: 10px;
+           
+       }
+       .award4{
+        margin-top: 10px;
+
+       }
+       .Medical{
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        height: 700px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLNWD8NZH5BIk3_7FaAAIx5Scgw00427e-sw&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+       }
+       .test{
+        margin-top: 50px;
+        background-color:white;
+        width: 600px;
+        height: 600px;
+        
+        text-align: center;
+        position: relative;
+        top: 48px;
+        left: 100px;
+    
+       }
+       .test1{
+        margin-top: 40px;
+        position: relative;
+        top: 50px;
+       }
+       .doctor{
+        display: flex;
+        gap: 10px;
+       }
+       .doctors{
+        margin-top: 80px;
+        margin-left: 100px;
+
+       }
+       .mgi{
+        width: 100px;
+        border-radius: 1000px;
+        margin-right: 50px;
+
+       }
+       .bond{
+        width: 100px;
+        margin-right: 20pxpx;
+       }
+       span{
+        color: rgb(167, 143, 143);
+       }
+       .butt1{
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: blue;
+        color: white;
+        font-size: larger;
+        margin-top: 50px;
+        margin-left: -0px;
+       }
+       .video{
+         width: 400px;
+         float: right;
+
+       }
+       #lpg{
+        width: 700px;
+        height: 300px;
+        /* border: solid; */
+        position: absolute;
+        bottom: 100px;
+        left: 650px;
+        top: 246px;
+        background-color: rgb(74, 74, 233);
+       }
+       #pk{
+        width: 100px;
+        height: 100px;
+        /* border: solid; */
+        position: absolute;
+        bottom: 500px;
+        /* left: 950px; */
+       }
+       #jh{
+        width: 600px;
+        height: 20px;
+        /* border: solid; */
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background-color: cadetblue;
+       }
+       #qq{
+        width: 600px;
+        height: 300px;
+        border: solid;
+        position: relative;
+        bottom: 305px;
+        left: 650px;
+        background-color: rgb(117, 117, 253);
+       }
+       #sd{
+        width: 450px;
+        height: 0px;
+        border: solid;
+        margin-top: 40px;
+        margin-left: 20px;
+        background-color: rgb(161, 214, 216);
+       }
+       #nn{
+        width: 99%;
+        height: 300px;
+        border: solid;
+        border: solid white;
+       }
+       #nm{
+        width: 80%;
+        height: 300px;
+        border: solid;
+        margin-left: 130px;
+        display: flex;
+        border: solid white;
+        gap: 20px;
+       }
+       #op{
+        width: 300px;
+        height: 300px;
+        border: solid;
+        border: solid white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #ff{
+        width: 99%;
+        height: 300px;
+        /* border: solid; */
+        margin-top: 80px;
+        
+       }
+       #tv{
+        text-align: center;
+        margin-top: 70px;
+        background-color: darkgrey;
+       }
+       #yu{
+        width: 94%;
+        height: 600px;
+        display: flex;
+        border: white;
+        margin-top: 150px;
+       }
+       #tt{
+        width: 50%;
+        height: 600px;
+        /* border: solid; */
+        position: relative;
+        left: 60px;
+       }
+       .location{
+        margin-left: 20px;
+        font-size: 25px;
+        margin-top: 50px;
+       }
+       .serch{
+        font-size: 25px;
+         margin-left: 20px;
+         margin-top: 30px;
+       }
+       .online{
+        width:50% ;
+        height: 600px;
+        border: solid white;
+
+
+       }
+       
+       .option1{
+        width: 400px;
+        position: relative;
+        left: 400px;
+        bottom: 63px;
+       }
+       .option3{
+        width: 400px;
+        position: relative;
+        left: 400px;
+        bottom: 63px;
+       }
+       #ak{
+        width: 95%;
+        height: 500px;
+        /* border: solid; */
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        
+       }
+       #omg{
+        width: 35%;
+        height: 400px;
+        border: solid white;
+        position: relative;
+        left: 180px;
+       }
+#namin{
+    width: 35%;
+    height: 500px;
+    border: solid white;
+    margin-left: 80px;
+    position: relative;
+    left: 180px;
+}
+#dr{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#by{
+    width: 250px;
+    height: 60px;
+    /* border: solid; */
+    display: flex;
+    margin-top: 30px;
+    
+}
+#yb{
+    display: flex;
+    margin-top: 18px;
+    font-size: 30px;
+    gap: 30px;
+}
+#mli{
+    width: 1100px;
+    height:350px;
+    /* border: solid white;  */
+    margin-top: 100px;
+    margin-left: 200px;
+    display: flex;
+    gap: 20px;
+}
+#rj{
+    width: 300px;
+    height: 350px;
+    /* border: solid white; */
+    gap: 20px;
+}
+#doc{
+    width: 99%;
+    height: 490px;
+    /* border: solid; */
+    margin-top: 100px;
+    display: flex;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/712/985/non_2x/abstract-health-medical-science-healthcare-icon-digital-technology-science-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg);
+}
+#vvv{
+    width: 50%;
+    height: 490px;
+    border: solid black;
+}
+#pop{
+    margin-left: 200px;
+    margin-top: 100px;
+    color: white;
+}
+#klj{
+    width: 600px;
+    height: 350px;
+    /* border: solid; */
+    margin-top: 130px;
+    margin-left: 50px;
+    background-image: url();
+    background-color: white;
+
+}
+#jfg{
+    width: 200px;
+    height: 100px;
+    /* border: solid; */
+    background-color: white;
+}
+#jkj{
+    margin-left: 40px;
+    margin-top: 0px;
+    background-color: white;
+    color: w;
+}
+#footer{
+    width:99%;
+    height: 600px;
+    border: solid black;
+    margin-left: auto;
+    display: flex;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5yQmSQ_TAlgtahJ890tkEyC8_g-Z7eMcbg&s); */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5gH5Ludk0LxMcHWjGkL0DLEltZINj80GmxA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#to{
+    width: 45%;
+    height:600px;
+    /* border: solid; */
+   
+}
+#ot{
+    margin-top: 150px;
+    font-size: 30px;
+    margin-left: 100px;
+    color: white;
+}
+#tyu{
+    width: 200px;
+    height: 50px;
+    /* border: solid; */
+    color: white;
+}
+#quik{
+    width: 150px;
+    height: 250px;
+    /* border: solid; */
+    margin-left: 100px;
+    margin-top: 160px;
+    color: white;
+    font-size: 18px;
+}
+#make{
+    width: 160px;
+    height: 250px;
+    /* border: solid; */
+    margin-left: 100px;
+    margin-top: 160px;
+    position: relative;
+    bottom:415px;
+    margin-left: 400px;
+    background-image: url;
+    color: white;
+    font-size: 18x;
+}
+#ipo{
+    width: 115px;
+    height: 56px;
+    border: solid;
+    position: relative;
+    bottom: 62px;
+    left: 500px;
+    background-color: black;
+}
+#trt{
+    position: relative;
+    right: 300px;
+    top: 80px;
+    
+   
+}
+
+/*@media screen and (max-width: 480px)
+        {
+            .box{
+                display: block;
+            }
+            .award
+            {
+                display: block;
+            }
+            .Medical
+            {
+                display: block;
+            }
+            .nm
+            {
+                display: block;
+                margin-left: 30px;
+                margin: 20px;
+            }
+            .yu{
+                display: block;
+                margin: 20px;
+            }
+            .bio{
+                display: block;
+            }
+            .bio img
+            {
+                width: 200px;
+                margin: auto;
+            }
+            .john
+            {
+                display: block;
+                width: 200px;
+            }
+            .lab{
+                display: block;
+            }
+            .doc img
+            {
+                width: 200px;
+                margin: auto;
+            }
+            .footer
+            {
+                display: block;
+                margin: auto;
+                padding: 10pz;
+            }
+            .foot
+            {
+                width: 300px;
+            }
+            .foot2
+            {
+                width: 200px;
+                margin: 50px;
+            }
+            .footer2
+            {
+                display: block;
+            }
+            .footer22{
+                width: 200px;
+            }
+            
+            .footer3
+            {
+                display: block;
+            }
+        }
+        @media screen and(max-width: 768px)
+       {
+        .lab{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+       }*/
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <i style="margin-top: 19px;" class="fa-solid fa-location-dot"></i>
+            <p style="position: relative;bottom: 35px;left: 20px;margin-top: 19px;">123 Street, New York, USA</p>
+            
+
+        </div>
+        <div id="box3">
+            <i style="margin-top: 19px;" class="fa-regular fa-clock"></i>
+            <p style="position: relative;bottom: 35px;left: 20px;margin-top: 19px;">Mon-Sat 09am-5pm, Sun Closed</p>
+
+        </div>
+        <div id="box4">
+            <p>currear/</p>
+            <p>support/</p>
+            <p>terms/</p>
+            <p>FAQS/</p>
+           
+
+        </div>
+
+    </div>
+    <div id="box5">
+        <div id="box6">
+            <img style="width: 58px;height: 55px;position: relative;top: 15px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90fMqy14E9QB4_M4gdKijq6yscvqRa1uMcw&s" alt="">
+            <p style="position: relative;left: 60px;bottom: 58px;font-size: 20px;color: white;margin-top: 19px;">Call Now <br>
+                +012 345 6789</p>
+            
+
+        </div>
+        <div id="box7">
+            <p style="font-size: 40px;position: relative;bottom: 30px;">lab<span style="color: white;font-size: 40px;">sky</span></p>
+
+        </div>
+        <div id="box8">
+            <img style="width: 58px;height: 55px;position: relative;top: 15px;" src="https://www.shutterstock.com/image-vector/email-icon-on-blue-backgroundclean-600nw-241659046.jpg" alt="">
+            <p style="margin-left: 70px;position: relative;bottom: 60px;color: white;font-size: 20px;margin-top: 19px;">Mail Now <br>
+                info@example.com</p>
+           
+
+        </div>
+       
+
+    </div>
+    <div id="box9">
+        <div id="box10">
+            <p>HOME</p>
+            <P>ABOUT</P>
+            <P>PAGES</P>
+            <P>SERVICE</P>
+            <P>CONTACT</P>
+
+        </div>
+        <div id="box11">
+            <div id="box12">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-youtube"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+        </div>
+        
+        </div>
+
+    </div>
+    <div class="slider" >
+        <figure>
+            <div class="slide">
+                <h1 >awward wining <br>laboratry center <br> <b style="font-size: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.NS RG nw sr sebdh N SD RG Bnw <br><button style="width: 200px;height: 50px;background-color: black ;color: white;">EXPLORE NOW</button></b> </h1>
+                <img src="https://themewagon.github.io/Labsky/img/carousel-2.jpg" alt="">
+    
+            </div>
+            <div class="slide">
+                <div id="jk">
+                <h1>EXPECT DOCTOR &<br>LAP ASSISTANT <br> <b style="font-size: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.NS RG nw sr sebdh N SD RG Bnw <br><button style="width: 200px;height: 50px;background-color: black ;color: white;">EXPLORE NOW</button></b> </h1>
+            </div>
+                <img src="https://themewagon.github.io/Labsky/img/carousel-1.jpg" alt="">
+            </div>
+           
+        </figure>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="cr">
+        <div id="men">
+            <div id="ll">
+                <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Labsky/img/about-1.jpg" alt="">
+
+            </div>
+            <div id="lp">
+                <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Labsky/img/about-2.jpg" alt="">
+
+            </div>
+            <div id="lu">
+                <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Labsky/img/about-3.jpg" alt="">
+
+            </div>
+            <div id="lg">
+                <img style="width: 100px;height: 100px;border-radius: 1000px;position: relative;left: 100px;top: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yE4wPL9GXowpPxXNrIjVceHtAmz0SJp8ZA&s" alt="">
+                <BR></BR>
+                <br>
+                <p style="font-size: 35px;color: white;text-align: center;">25</p>
+                
+                <p style="text-align: center;color: white;font-size: 25px;">YEAR EXPERIANCE</p>
+
+               
+                
+            </div>
+
+        </div>
+        <div id="men">
+            <h1>Trusted Lab Experts and</h1>
+            <h1>Latest Lab Technologies</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas inventore eligendi! Nisi pariatur architecto quia cum veniam exercitationem assumenda consequatur tempore earum deserunt perspiciatis quidem libero deleniti, laudantium at.</p>
+           <div id="qw">
+            <p  style="text-align: center;margin-top: 70px;color: white;font-size: 20px;">AWWARS WININIG</p>
+            <P style="text-align: center;color: white;font-size: 20px;">9999</P>
+
+           </div>
+           <div id="zz">
+            <p  style="text-align: center;margin-top: 70px;color: white;font-size: 20px;">COMPLETE CASES</p>
+            <P style="text-align: center;color: white;font-size: 20px;">9999</P>
+
+
+           </div>
+           <div id="aa">
+            <p  style="text-align: center;margin-top: 70px;color: white;font-size: 20px;">HAPPY CLINT </p>
+            <P style="text-align: center;color: white;">9999</P>
+
+
+           </div>
+
+        </div>
+
+    </div>
+    <div class="award" >
+        <div class="award1">
+            <img class="award2"src="https://www.creativefabrica.com/wp-content/uploads/2021/06/03/Winner-Badge-Award-Icon-Graphics-12861759-1-1-580x386.jpg" alt="">
+            <h1><b>award wining</b></h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Curabitur tellus augue.</p>
+        </div>
+        <div class="award1">
+            <img class="award3"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPjczGYo4HW8ad_tM9y8wgmsD1acRNKFN4Q&s" alt="">
+            <h1><b>Expet Doctors</b></h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Curabitur tellus augue.</p>
+        </div>
+        <div class="award1 ">
+            <img class="award3"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLnnn7M3Zk8glkpK9z7fhC2jZCF_2WA5FTg&s" alt="">
+            
+            <h1><b>Fair Prices</b></h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Curabitur tellus augue.</p>
+        </div>
+        <div class="award1">
+            <img class="award3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqxF0S3n9JLibEfciC7dxyFzoQJGltdXr8RA&s" alt="">
+            <h1><b>24/7 Support</b></h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Curabitur tellus augue.</p>
+        </div>
+    </div>
+    <div class="Medical">
+        <div class="test">
+            <div class="test1">
+                <h1>The Best Medical Test & <br> Laboratory Solution</h1>
+                <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar  <br>tortor. Quisque vel lorem porttitor, malesuada arcu quis, <br> fringilla risus. Pellentesque eu consequat augue</span></p>
+            </div>
+            <div class="doctor"> 
+                <div class="doctors">
+                    <img class="mgi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDWRTdEkwlp5fYH7WXcK-TAhMapJV2LeI7g&s" alt="">
+                   
+                  <h1> Experience <br> Doctors</h1>
+                  <p> <span>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit.</span></p>
+                </div>
+                <div class="doctors">
+                    <img class="bond" src="https://t3.ftcdn.net/jpg/08/99/88/44/360_F_899884439_XQl3iyoagOewKyqzRwjnguVBtsn8WD7K.jpg" alt="">
+                     
+                    
+                    <h1> Experience <br> Doctors</h1>
+                    <p> <span>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit.</span></p>
+                  </div>
+            </div>
+            <div> 
+                <button class="butt1">
+                    Explor more 
+                </button>
+                
+            </div>
+            <div id="qq">
+                <p style="position: relative;right: 200px;top: 50px;">SAMPLE PREPRATION</p>
+                <P style="position: relative;left: 150px;top: 30px;">90%</P>
+                <div id="sd">
+
+                </div>
+                <p style="position: relative;right: 200px;top: 50px;">SAMPLE PREPRATION</p>
+                <P style="position: relative;left: 150px;top: 30px;">90%</P>
+                <div id="sd">
+
+                </div>
+                <p style="position: relative;right: 200px;top: 50px;">SAMPLE PREPRATION</p>
+                <P style="position: relative;left: 150px;top: 30px;">90%</P>
+                <div id="sd">
+
+                </div>
+
+            </div>
+           
+        
+
+        </div>
+       
+    </div>
+    <div>
+        
+        
+    </div>
+    <div id="ff">
+        <div id="tv">
+
+       
+        <h1>Reliable & High-Quality</h1>
+        <h1>Laboratory Service</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, <br> iaculis id elit eget, ultrices pulvinar tortor.</p>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div id="nn">
+    <div id="nm">
+        <div id="op">
+            <img style="width: 100px;position: relative;right: 0px;" src="https://www.creativefabrica.com/wp-content/uploads/2020/03/08/Medical-stethoscope-heart-logo-Graphics-3403229-1.jpg" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">Pathology Testing</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+        </div>
+        <div id="op">
+            <img style="width: 60px;position: relative;right: 0px;bottom: 5px;height: 60px;left: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxYCV4whulPnd07RPLUoTZoMkU8h2NcvfMw&s" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">microbiology tests</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+        </div>
+        <div id="op">
+            <img style="width: 60px;position: relative;right: 0px;left: 20px;" src="https://png.pngtree.com/png-vector/20240130/ourmid/pngtree-isolated-of-red-color-virus-png-image_11516662.png" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">biocamestry   tests a</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+        </div>
+        <div id="op">
+            <img style="width: 92px;position: relative;right: 0px;left: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-mRIsUjvNoR9nQtFRmG8n72D9DEQuCozIw&s" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">histopalogy test has</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+        </div>
+
+    </div>
+
+</div>
+<br>
+<br>
+<div id="nn">
+    <div id="nm">
+        <div id="op">
+            <img style="width: 92px;position: relative;right: 0px;left: 20px;" src="https://www.shutterstock.com/image-vector/health-drug-medical-healthcare-clinic-260nw-2110067885.jpg" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">Pathology urin tests</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+
+
+        </div>
+        <div id="op">
+            <img style="width: 70px;position: relative;right: 0px;left: 20px;" src="https://www.shutterstock.com/image-vector/blood-drop-plus-heart-shape-600nw-2238094877.jpg" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">blood tests and tests</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color:white;margin-left: 20px;">RED MORE</button>
+
+
+        </div>
+        <div id="op">
+            <img style="width: 70px;position: relative;right: 0px;left: 20px;" src="https://media.istockphoto.com/id/1184204481/vector/thermometer-vector-flat-design-stock-illustration.jpg?s=612x612&w=0&k=20&c=xLVkQcL5KscGB3lUNtqTKIPdorT-H7xbAOgkUzhVfTc=" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">alargyy test and srres</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+            
+
+        </div>
+        <div id="op">
+            <img style="width: 70px;position: relative;right: 0px;left: 20px;" src="https://thumbs.dreamstime.com/b/allergy-tested-line-color-icon-allergic-reaction-concept-medical-analysis-sign-web-page-mobile-app-button-logo-vector-isolated-157608624.jpg" alt="">
+            <p style="font-size: 25px;margin-left: 20px;">fevere tests and sreese</p>
+            <br>
+            <br>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.lonnfjkf jfkjkjs gns gshjfbghjshfg ghjsh gjhg hhsjhg sjs hjhsjhjhjh  a hfgg fh</p>
+            <br>
+            <br>
+            
+
+           <button style="width: 180px;height: 50px;background-color: black;color: white;margin-left: 20px;">RED MORE</button>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+<br>
+<br>
+<div id="yu">
+    <div id="tt">
+        <br>
+        <br>
+        <br>
+        <h1>We Ensure You Will Always</h1>
+        <h1>Get The Best Result</h1>
+        <br>
+        <br>
+       <div> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur tellus augue, iaculis id elit eget, ultrices <br> pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis,<br> fringilla risus. Pellentesque eu consequat augue. <br>
+            <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, <br>iaculis id elit eget, ultrices pulvinar tortor.</p>
+       </div>
+      <div class="location">
+        <p><i class="fa-solid fa-location-dot"></i> Office Address <br>
+            123 Street, New York, USA</p>
+           
+      </div>
+      <br>
+      <hr>
+      <div class="serch">
+        <p><i class="fa-solid fa-magnifying-glass"></i> Office Address <br>
+            123 Street, New York, USA</p>
+            
+      </div>
+
+    </div>
+    <div class="online">
+        <h1><b> Online Appoinment</b></h1>
+        <br>
+        <div class="os">
+        <div class="option">
+         <input style="width: 300px;height: 60px;" type="text" name="" id="name" placeholder="your name">
+         
+        </div>
+       
+        <div class="option1">
+            <input style="width: 300px; height: 60px;" type="text" name="" id=" text" placeholder="your email">
+            
+           </div>
+           <div class="option2">
+            <input style="width: 300px; height: 60px;"type="text" name="" id="number" placeholder="your mobile">
+            
+           </div>
+           <div class="option3">
+            <input style="width: 300px; height: 60px;"type="text" name="" id="name" placeholder=" pathology">
+            
+           </div>
+           <div class="option4">
+            <input style="width: 700px; height: 150px;"type="text" name="" id="name" placeholder="massage">
+            
+           </div>
+           <button style="background-color: blue; color: white; width: 700px;height: 50px; font-size: 30px; margin-top: 20px;">submit</button>
+           </div>
+    </div>
+</div>
+<br>
+<br>
+<div id="ak">
+    <div id="omg">
+        <img style="width: 500px;height: 500px;" src="https://themewagon.github.io/Labsky/img/team-1.jpg" alt="">
+
+    </div>
+    <div id="namin">
+        <div id="dr">
+
+
+        <b style="font-size: 30px;">Dr. John Martin</b>
+        <br>
+        <br>
+        <p style="font-size: 25px;">CEO & Founder <br>
+
+            Labsky, New York, USA</p>
+            <br>
+            
+        <b style="font-size: 25px;">Biography</b>
+        <br>
+        <br>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam atque vero dolorem repellendus. Reprehenderit voluptatem, corporis corrupti sapiente ut <br>explicabo sit, molestias dolorem assumenda dolor non. Molestias, sint nulla.andh the ajjf ajfjjf ajjdkii  ajd hja  jjj ah ffhhh jjdhfhjhajhjhjh jhfjfd may dna ek s doj hhfhhjdjhjah jj akjdkfhajhjhhhhjhjhjhfjhgg <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse minima. Dicta eaque mollitia possimus, quae dolores recusandae nulla, nobis magnam eligendi expedita saepe sint nihil voluptate, itaque unde? Quod.</p></p>
+        <div id="by">
+            <div id="yb">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-youtube"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+</div>
+<div id="mli">
+    <div id="rj">
+        <img style="width: 300px;height: 250px;" src="https://themewagon.github.io/Labsky/img/team-2.jpg" alt="">
+        <p style="text-align: center;margin-top: 280px;position: relative;bottom: 250px;">Alex Robin <br>
+            Lab Assistant pro</p>
+
+    </div>
+    <div id="rj">
+        <img style="width: 300px;height: 250px;" src="https://themewagon.github.io/Labsky/img/team-3.jpg" alt="">
+
+        <p style="text-align: center;margin-top: 280px;position: relative;bottom: 250px;">Andrew Bon <br>
+            Lab Assistant pro</p>
+
+
+    </div>
+    <div id="rj">
+        <img style="width: 300px;height: 250px;" src="https://themewagon.github.io/Labsky/img/team-4.jpg" alt="">
+        <p style="text-align: center;margin-top: 280px;position: relative;bottom: 250px;">Martin Tompson<br>
+            Lab Assistant pro</p>
+
+
+    </div>
+    <div id="rj">
+        <img style="width: 300px;height: 250px;" src="https://themewagon.github.io/Labsky/img/team-5.jpg" alt="">
+        <p style="text-align: center;margin-top: 280px;position: relative;bottom: 250px;">Clarabelle Samber <br>
+            Lab Assistant pro</p>
+
+
+    </div>
+
+</div>
+<div id="doc">
+    <div id="vvv">
+        <div id="pop">
+
+        
+        <h1>What Clients Say About Our <br> Lab Services!</h1>
+        <br>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue <br>, iaculis id elit eget, ultrices pulvinar tortor.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button style="height: 50px;width: 170px;">MORE TESTYMONAILS</button>
+    </div>
+    </div>
+    <div id="vvv">
+        <div id="klj">
+            <div id="jkj">
+            <i style="font-size: 60px;" class="fa-regular fa-comment"></i>
+            <br>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque totam hic eos libero, ducimus quia explicabo numquam nostrum nihil asperiores quod iure similique dolorem qui ea. Vel, ea tenetur? <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea doloremque aliquam et nisi consectetur officiis. Hic dolorem recusandae quasi eum provident quae, fugiat natus corrupti accusamus, eligendilorem
+                 aperiam temporibus! <p></p></p></p>
+                 <br>
+                 <br>
+                 <div id="jfg">
+                    <img style="border-radius: 1000px;" src="https://themewagon.github.io/Labsky/img/testimonial-1.jpg" alt="">
+                    <p style="position: relative;bottom: 70px;left: 100px;">client name</p>
+                    <p style="position: relative;bottom: 70px;left: 100px;">proffeastion</p>
+                </div>
+                 </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<div id="footer">
+    <div id="to">
+        <div id="ot">
+
+        
+        <p style="color: rgb(56, 56, 221);font-size: 40px;">Lab <span >sky</span></p>
+        <br>
+        <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+        <br>
+        <p style="font-size: 20px;"><i class="fa-solid fa-location-dot"></i>123 Street, New York, USA</p>
+        <br>
+        <p style="font-size:20px ;"><i class="fa-solid fa-phone"></i>+012 345 67890</p>
+        <br>
+        <p style="font-size: 20px;"><i class="fa-solid fa-envelope"></i>info@example.com</p>
+        <br>
+        <div id="tyu">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-house"></i>
+
+        </div>
+    </div>
+
+    </div>
+    <div id="to">
+        <div id="quik">
+            <p style="font-size: 30px;">Quick Links</p>
+            <br>
+            <br>
+            
+            <ul>
+                <li>about us</li>
+                <br>
+                <li>contact us</li>
+                <br>
+                <li>our service</li>
+                <br>
+                <li>terms and condition</li>
+                <br>
+                <li>suuport</li>
+                <br>
+            </ul>
+
+        </div>
+        <div id="make">
+            <p style="font-size: 30px;">popular links</p>
+            <br>
+            <br>
+            
+            <ul>
+                <li>about us</li>
+                <br>
+                <li>contact us</li>
+                <br>
+                <li>our service</li>
+                <br>
+                <li>terms and condition</li>
+                <br>
+                <li>suuport</li>
+                <br>
+            </ul>
+            <div id="trt">
+            <input style="width: 500px; height: 60px;"type="text" name="" id="name" placeholder=" YOUR EMAIL EDDRESS">
+            <div id="ipo">
+                <p style="text-align: center;margin-top: 15px;font-size: 20px;">sigin up</p>
+
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+</body>
+</html>

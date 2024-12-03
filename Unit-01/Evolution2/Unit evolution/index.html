@@ -120,6 +120,19 @@
             background-color:white;
             box-shadow: 1px 1px gray;
           }
+          .happy div i{
+            background-color: rgb(220, 227, 234);
+            color: green;
+            padding: 10px;
+            position: relative;
+            bottom: 20px;
+            border-radius: 50%;
+            font-size: 40px;
+          }
+          .happy div i:hover{
+            color:aqua;
+            background-color: yellow;
+          }
           
           @media screen and (max-width: 480px)
           {
@@ -128,6 +141,39 @@
     
             }
             
+          }
+         
+          .check
+          {
+            display: flex;
+            gap: 10px;
+          }
+          .checkimg
+          {
+            width: 400px;
+          }
+          .checkp
+          {
+            width: 500px;
+            margin: 150px;
+          }
+          .check div{
+            color: gray;
+          }
+          .gallary
+          {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 5px;
+            margin: 30px;
+          }
+          .gallary div
+          {
+            width: 300px;
+          }
+          .gallary div img 
+          {
+            width: 300px;
           }
     </style>
 </head>
@@ -199,10 +245,73 @@
            <div><i class="fa-solid fa-graduation-cap" style="color: red;"></i>Flavor Nivelanda</div>
         </div>
         <div class="happy">
-            <div><h1>232</h1><p>Happy Client</p></div>
-            <div><h1>232</h1><p>Happy Client</p></div>
-            <div><h1>232</h1><p>Happy Client</p></div>
-            <div><h1>232</h1><p>Happy Client</p></div>
+            <div><i class="fa-solid fa-smile"></i>
+              <h1>232</h1></i><p>Happy Client</p></div>
+            <div><i class="fas fa-file-image"></i><h1>232</h1><p>Projects</p></div>
+            <div><i class="fa-solid fa-headset"></i><h1>232</h1><p>Hours of support</p></div>
+            <div><i class="fa-solid fa-user-group"></i><h1>232</h1><p>HArd Workers</p></div>
+        </div>
+        <div class="check">
+          <div class="checkimg"> 
+            <h5 >DETAILS</h5>
+            <h1 style="color: blue;">CHECK OUR DETAILS</h1>
+            <img style="width: 500px;" src="https://themewagon.github.io/Bootslander/assets/img/details-1.png">
+          </div>
+          <div class="checkp">
+            <h1 style="color:blue">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h1>
+            <p >lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nulla cum deserunt aliquid esse, commodi consectetur, assumenda inventore officia velit temporibus dolor eveniet maiores modi autem error quam facere id?</p>
+             <ul type="checkmarks" style="color: gray;">
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li>Ullam est qui quos consequatur eos accusamus.</li>
+             </ul>
+          </div>
+        </div>
+        <div class="check">
+          <div class="checkimg">
+            <h1 style="color: blue;">Corporis temporibus maiores provident</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime quis doloremque quibusdam pariatur possimus accusantium quas nemo cum dicta sed aliquam, quisquam aut et delectus ipsa mollitia perspiciatis facilis?0</p>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="checkp">
+             <img src="https://themewagon.github.io/Bootslander/assets/img/details-3.png">
+          </div>
+        </div>
+        <div class="checkp">
+          <h1 style="color:blue">Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h1>
+           <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+          <ul type="checkmarks" style="color: gray;">
+            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+             <li>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat
+              .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="check">
+        <div class="checkimg">
+          <h1 style="color: blue;">Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime quis doloremque quibusdam pariatur possimus accusantium quas nemo cum dicta sed aliquam, quisquam aut et delectus ipsa mollitia perspiciatis facilis?0</p>
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="checkp">
+           <img src="https://themewagon.github.io/Bootslander/assets/img/details-4.png">
+        </div>
+      </div>
+
+        <div class="gallary">
+          <div>
+          <h5>GALLERY</h5>
+          <h1 style="color: blue;">CHECK OUR GALLERY</h1>
+        </div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
+             <div><img src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg"></div>
 
         </div>
         
