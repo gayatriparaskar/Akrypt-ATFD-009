@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navbar Styling - Flexbox Added */
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        #navbar h2 {
+            margin: 0;
+        }
+
+        #navbar div {
+            display: flex;
+            gap: 15px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Filter and Sort Section */
+        #filters {
+            /* display: flex; */
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #filter, #sort {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            margin: 20px;
+            color: #007BFF;
+        }
+
+        /* Table Styling */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        thead {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            font-size: 18px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .buy-btn:hover {
+            background-color: #218838;
+        }
+
+        .bookmark-btn {
+            background-color: #ffc107;
+            color: white;
+        }
+
+        .bookmark-btn:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div id="navbar">
+      <h2>Akrypt Library</h2>
+      <div style="display: flex;">
+          <a href="./index.html"><h2>Home</h2></a>
+          <a href="./dashboard.html"><h2>Dashboard</h2></a>
+          <a href="./buy.html"><h2>My Books</h2></a>
+          <a href="./bookmark.html"><h2>Bookmark</h2></a>
+      </div>
+  </div>
+    <!-- Filter and Sort Section -->
+    <div id="filters">
+        <select id="filter">
+            <option value="">Select Category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Self Help">Self Help</option>
+            <option value="Finance">Finance</option>
+        </select>
+
+        <select id="sort">
+            <option value="">Sort by Price</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+    </div>
+
+    <!-- Book Count Section -->
+    <h1>Total Books: <span id="book-count">0</span></h1>
+
+    <!-- Book Table Section -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Added Date</th>
+                <th>Category</th>
+              
+                <th>Price</th>
+                <th>Bookmark</th>
+                <th>Buy</th>
+            </tr>
+        </thead>
+        <tbody id="tblbody">
+          
+            <!-- Data will be appended here dynamically -->
+        </tbody>
+    </table>
+
+  
+</body>
+<script>
+  let tblbody=document.getElementById("tblbody")
+  let filter=document.getElementById("filter")
+  let sort=document.getElementById("sort")
+  let bookCount=document.getElementById("book-count")
+  let bookArr=JSON.parse(localStorage.getItem("book-list"))
+  // console.log(bookArr)
+    
+  let bookmarkArr=[]
+  table(bookArr)
+  
+   
+  function table(bookArr)
+  { 
+    
+   //tblbody.innerText=null
+    console.log(bookArr)
+    bookArr.forEach((e,i) => {
+    // tblbody.innerText=null
+    let tr=document.createElement("tr")
+     tblbody.append(tr)
+
+        let name=document.createElement("td")
+        name.innerText=e.name
+        //console.log(name)
+       
+        let author=document.createElement("td")
+        author.innerText=e.author
+
+        let desc=document.createElement("td")
+        desc.innerText=e.desc
+
+        let date=document.createElement("td")
+        date.innerText=e.date
+        //console.log(date)
+
+        let cat=document.createElement("td")
+        cat.innerText=e.category
+
+        let price=document.createElement("td")
+        price.innerText=e.price
+
+        let bookmark=document.createElement("td")
+        bookmark.innerText="Add"
+     
+        bookmark.addEventListener("click",function(){
+           // tblbody.innerHTML=null
+           remove()
+           bookmarkArr.push(bookArr)
+           localStorage.setItem("book-Add",JSON.stringify(bookArr))
+           // let index = bookArr.indexOf(e);
+           
+            console.log(bookArr)
+           
+        })
+        
+        let buy=document.createElement("td")
+        buy.innerText="Buy"
+
+       bkCount()
+       // remove()
+        
+        tr.append(name,author,desc,date,cat,price,bookmark,buy)
+
+    });
+
+  
+  }
+  
+  function bkCount(){
+    bookArr.forEach((e,i)=>{
+        bookCount.innerText=i+1
+    })
+  }
+
+//   let bkmark=[]
+// function remove(){
+//     //tblbody.innerHTML=null
+//  bookArr.forEach((i)=>{
+//     bookArr.splice(i,1)
+//     bookmarkArr.push(bookArr)
+//  })
+  
+
+    //bookmarkArr.push(bookArr)
+   // tblbody.innerHTML=null
+//}
+
+// filter.addEventListener("change",function(){
+//     let selectedCourse=filter.value
+
+//     if(selectedCourse){
+//         let filterData=filter.forEach((e,i)=>{
+//             if(e.value="fiction")
+//         {
+//             table()
+//         }
+//         })
+//     }
+// })
+ 
+// sort.addEventListener("change",function(){
+//     bookArr.forEach((e,i)=>{
+//         console.log(e.price)
+        
+
+// })
+   
+
+
+</script>
+</html>
